@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0830" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-01-30T06:03:05" tests="0" file="cypress/integration/SC/testtwo.sc.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="C Suite" timestamp="2021-01-30T06:03:05" tests="3" time="0.0830" failures="1">
+    <testcase name="C Suite Test one C" time="0.0740" classname="Test one C">
+    </testcase>
+    <testcase name="C Suite Test Two C" time="0.0090" classname="Test Two C">
+    </testcase>
+    <testcase name="C Suite Test Three C" time="0.0000" classname="Test Three C">
+      <failure message="expected 9 to equal 8" type="AssertionError"><![CDATA[AssertionError: expected 9 to equal 8
+    at Context.eval (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/tests?p=cypress/integration/SC/testtwo.sc.spec.js:107:22)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

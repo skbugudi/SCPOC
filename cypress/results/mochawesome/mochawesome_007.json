@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-01-28T12:21:34.692Z",
+    "end": "2021-01-28T12:21:35.194Z",
+    "duration": 502,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03ed1513-7a3c-43ed-98cf-698b7ffe1af5",
+      "title": "",
+      "fullFile": "cypress/integration/SC/testtwo.sc.spec.js",
+      "file": "cypress/integration/SC/testtwo.sc.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f53b06f-3593-41bf-a002-fe2eccda5e65",
+          "title": "C Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test one C",
+              "fullTitle": "C Suite Test one C",
+              "timedOut": null,
+              "duration": 45,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(5 + 4).to.equal(9);",
+              "err": {},
+              "uuid": "ed2e0e8b-7600-4187-9cc2-bcfece03ade1",
+              "parentUUID": "6f53b06f-3593-41bf-a002-fe2eccda5e65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Two C",
+              "fullTitle": "C Suite Test Two C",
+              "timedOut": null,
+              "duration": 16,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(5 + 4).to.equal(9);",
+              "err": {},
+              "uuid": "918a5453-262e-45fa-bf25-2c1f564fddbb",
+              "parentUUID": "6f53b06f-3593-41bf-a002-fe2eccda5e65",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test Three C",
+              "fullTitle": "C Suite Test Three C",
+              "timedOut": null,
+              "duration": 368,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect(5 + 4).to.equal(8);",
+              "err": {
+                "message": "AssertionError: expected 9 to equal 8",
+                "estack": "AssertionError: expected 9 to equal 8\n    at Context.eval (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/tests?p=cypress/integration/SC/testtwo.sc.spec.js:107:22)",
+                "diff": "- 9\n+ 8\n"
+              },
+              "uuid": "c3792073-0804-4037-b6b4-24c17d6b2238",
+              "parentUUID": "6f53b06f-3593-41bf-a002-fe2eccda5e65",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed2e0e8b-7600-4187-9cc2-bcfece03ade1",
+            "918a5453-262e-45fa-bf25-2c1f564fddbb"
+          ],
+          "failures": [
+            "c3792073-0804-4037-b6b4-24c17d6b2238"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 429,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

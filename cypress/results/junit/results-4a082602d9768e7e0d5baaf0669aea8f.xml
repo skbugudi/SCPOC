@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.3150" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-01-28T12:23:12" tests="0" file="cypress/integration/SC/login.sc.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Suite Login test" timestamp="2021-01-28T12:23:12" tests="3" time="0.3150" failures="1">
+    <testcase name="Suite Login test Login form" time="0.0000" classname="Login form">
+      <failure message="Cannot read property &apos;name&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'name' of undefined
+    at https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:169842:22
+    at tryCatcher (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:10609:23)
+    at Promise._settlePromiseFromHandler (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8544:31)
+    at Promise._settlePromise (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8601:18)
+    at Promise._settlePromise0 (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8646:10)
+    at Promise._settlePromises (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8722:18)
+    at _drainQueueStep (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5316:12)
+    at _drainQueue (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5309:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5325:5)
+    at Async.drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5195:14)]]></failure>
+    </testcase>
+    <testcase name="Suite Login test Test one" time="0.2120" classname="Test one">
+    </testcase>
+    <testcase name="Suite Login test Test two" time="0.1030" classname="Test two">
+    </testcase>
+  </testsuite>
+</testsuites>

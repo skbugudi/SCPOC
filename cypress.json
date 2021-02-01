@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://portal-prtlshared2.devint.superchoice.com.au",
+  "ignoreTestFiles": "**/examples/*",
+  "viewportHieght": 1080,
+  "viewportWidth": 1920,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "video": true,
+  "screenshotOnRunFailure": true,
+  "trashAssetsBeforeRuns": true,
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "requestTimeout": 10000,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "projectId": "Employer Portal Testing Team",
+  "db": {
+    "user": "empis_sys",
+    "password": "sys",
+    "host": "postgres-portals.prtlshared2.dev.ic1.sc.local",
+    "database": "sctest",
+    "port": 27500
+  },
+  "taskTimeout": 600000
+}

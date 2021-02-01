@@ -1,0 +1,41 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai-json": "^1.0.0",
+    "cypress-postgresql": "*",
+    "cypress-waitfor": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai-subset": "^1.6.0",
+    "cypress": "^6.3.0",
+    "cypress-file-upload": "^5.0.2",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-postgres": "^1.1.1",
+    "junit-merge": "^2.0.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  },
+  "scripts": {
+    "cypress:run": "npm run prereport && npx cypress run",
+    "cypress:e2e": "npm run cypress:run; npm run junit:merge;  npm run mochawesome:merge",
+    "delete:reports": "rm -rf cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
+    "cy:run_spec": "npm run prereport && npx cypress run --spec 'cypress/integration/SC/login.sc.spec.js' --headless --record --key 10be2298-25ea-4ecf-97c8-0a0cbe4eafc3",
+    "cy:run_chrome": "npm run cy:run_spec -- --browser chrome --group CHROME --ci-build-id 1",
+    "cy:run_edge": "npm run cy:run_spec -- --browser edge --group EDGE --ci-build-id 1",
+    "cy:run_ff": "npm run cy:run_spec -- --browser firefox --group FIREFOX --ci-build-id 12",
+    "cy:run_parallel": "npm run cy:run_chrome & npm run cy:run_edge",
+    "cy:run2": "npx cypress run --headless --record --key xxx --parallel --ci-build-id $(date \"+%Y-%m-%d_%H-%M-%S\")",
+    "cy:run_p": "npm run cy:run2 & npm run cy:run2",
+    "cy:run_b": "ID=$(date \"+%Y-%m-%d_%H-%M-%S\") npm run cy:run_p"
+  },
+  "author": "",
+  "license": "ISC"
+}

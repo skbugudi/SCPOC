@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-01-28T12:10:59.936Z",
+    "end": "2021-01-28T12:12:48.175Z",
+    "duration": 108239,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "877abde5-1367-4e3e-a07b-df3e226a7d7e",
+      "title": "",
+      "fullFile": "cypress/integration/SC/login.sc.spec.js",
+      "file": "cypress/integration/SC/login.sc.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ca4a8519-1d85-42ed-b37c-638c3c200ccc",
+          "title": "Suite Login test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login form",
+              "fullTitle": "Suite Login test Login form",
+              "timedOut": null,
+              "duration": 107894,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_navigationCustodian.openCustodian.openCustodian(\"/mcsone\");\n_navigationCustodian.openCustodian.loginToCustodian(\"MCSONEUserOne\", \"&qsltd\");\n_navigationCustodian.openCustodian.uploadContributions(filepath);\n_generalUtilities.util.waitForElement('.widget-title.smaller');\n_exceptionPage.exception.selectFund('TRANSPORT');\n_exceptionPage.exception.popOver('#apply-state434');\ncy.get('.modal-dialog').find('#confirm-modal-cancel').click();\ncy.wait(3000);\n_navigationPage.onNavigationPage.historyPage();",
+              "err": {
+                "message": "TypeError: Cannot read property 'name' of undefined",
+                "estack": "TypeError: Cannot read property 'name' of undefined\n    at https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:169842:22\n    at tryCatcher (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:10609:23)\n    at Promise._settlePromiseFromHandler (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8544:31)\n    at Promise._settlePromise (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8601:18)\n    at Promise._settlePromise0 (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8646:10)\n    at Promise._settlePromises (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8722:18)\n    at _drainQueueStep (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5316:12)\n    at _drainQueue (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5309:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5325:5)\n    at Async.drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5195:14)",
+                "diff": null
+              },
+              "uuid": "c47980fd-9625-4ddd-88e9-e4a5fa2cfba1",
+              "parentUUID": "ca4a8519-1d85-42ed-b37c-638c3c200ccc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test one",
+              "fullTitle": "Suite Login test Test one",
+              "timedOut": null,
+              "duration": 220,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"Happy Test one\");",
+              "err": {},
+              "uuid": "dfc05fbe-9b48-47a6-bc3c-b202d237de0f",
+              "parentUUID": "ca4a8519-1d85-42ed-b37c-638c3c200ccc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test two",
+              "fullTitle": "Suite Login test Test two",
+              "timedOut": null,
+              "duration": 95,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log(\"Happy Test two\");",
+              "err": {},
+              "uuid": "749ca66b-7049-47ee-8e94-9e9bbb6483f4",
+              "parentUUID": "ca4a8519-1d85-42ed-b37c-638c3c200ccc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dfc05fbe-9b48-47a6-bc3c-b202d237de0f",
+            "749ca66b-7049-47ee-8e94-9e9bbb6483f4"
+          ],
+          "failures": [
+            "c47980fd-9625-4ddd-88e9-e4a5fa2cfba1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 108209,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
