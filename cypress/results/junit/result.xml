@@ -1,52 +1,9 @@
 <?xml version="1.0"?>
 <testsuites>
-<testsuite name="Root Suite" timestamp="2021-01-28T12:10:59" tests="0" file="cypress/integration/SC/login.sc.spec.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Suite Login test" timestamp="2021-01-28T12:10:59" tests="3" time="0.3150" failures="1">
+<testsuite name="Root Suite" timestamp="2021-02-06T09:20:58" tests="0" file="cypress/tests/integration/login.feature" time="0.0000" failures="0"></testsuite>
+<testsuite name="Login and upload file in the Employer Portal" timestamp="2021-02-06T09:20:58" tests="1" time="65.1440" failures="0">
   
-  <testcase name="Suite Login test Login form" time="0.0000" classname="Login form">
-    
-    <failure message="Cannot read property &apos;name&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'name' of undefined
-    at https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:169842:22
-    at tryCatcher (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:10609:23)
-    at Promise._settlePromiseFromHandler (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8544:31)
-    at Promise._settlePromise (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8601:18)
-    at Promise._settlePromise0 (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8646:10)
-    at Promise._settlePromises (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8722:18)
-    at _drainQueueStep (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5316:12)
-    at _drainQueue (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5309:9)
-    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5325:5)
-    at Async.drainQueues (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5195:14)]]></failure>
-    
-  </testcase>
-  
-  <testcase name="Suite Login test Test one" time="0.2200" classname="Test one"></testcase>
-  
-  <testcase name="Suite Login test Test two" time="0.0950" classname="Test two"></testcase>
-  
-</testsuite>
-
-<testsuite name="Root Suite" timestamp="2021-01-28T12:13:01" tests="0" file="cypress/integration/SC/testone.sc.spec.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Test sute2" timestamp="2021-01-28T12:13:01" tests="2" time="0.0390" failures="0">
-  
-  <testcase name="Test sute2 B Test one" time="0.0280" classname="B Test one"></testcase>
-  
-  <testcase name="Test sute2 B Test two" time="0.0110" classname="B Test two"></testcase>
-  
-</testsuite>
-
-<testsuite name="Root Suite" timestamp="2021-01-28T12:13:03" tests="0" file="cypress/integration/SC/testtwo.sc.spec.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="C Suite" timestamp="2021-01-28T12:13:03" tests="3" time="0.0450" failures="1">
-  
-  <testcase name="C Suite Test one C" time="0.0270" classname="Test one C"></testcase>
-  
-  <testcase name="C Suite Test Two C" time="0.0180" classname="Test Two C"></testcase>
-  
-  <testcase name="C Suite Test Three C" time="0.0000" classname="Test Three C">
-    
-    <failure message="expected 9 to equal 8" type="AssertionError"><![CDATA[AssertionError: expected 9 to equal 8
-    at Context.eval (https://portal-prtlshared2.devint.superchoice.com.au/__cypress/tests?p=cypress/integration/SC/testtwo.sc.spec.js:107:22)]]></failure>
-    
-  </testcase>
+  <testcase name="Login and upload file in the Employer Portal Scenario Outline name: Upload file and delete file from Grid (example #1)" time="65.1440" classname="Scenario Outline name: Upload file and delete file from Grid (example #1)"></testcase>
   
 </testsuite>
 

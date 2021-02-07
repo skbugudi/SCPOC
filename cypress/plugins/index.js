@@ -29,3 +29,9 @@ module.exports = (on, config) => {
   tasks = postgreSQL.loadDBPlugin( pool );
   on('task', tasks);
 }
+
+const cucumber = require('cypress-cucumber-preprocessor').default
+ 
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}

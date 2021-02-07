@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://portal-prtlshared2.devint.superchoice.com.au",
+  "baseUrl": "https://portal-prtlshared.devint.superchoice.com.au",
   "ignoreTestFiles": "**/examples/*",
   "viewportHieght": 1080,
   "viewportWidth": 1920,
@@ -17,7 +17,7 @@
   "reporterOptions": {
     "configFile": "reporter-config.json"
   },
-  "projectId": "Employer Portal Testing Team",
+  "projectId": "Shanth Portal",
   "db": {
     "user": "empis_sys",
     "password": "sys",
@@ -25,5 +25,9 @@
     "database": "sctest",
     "port": 27500
   },
-  "taskTimeout": 600000
+  "taskTimeout": 60000,
+  "testFiles": [
+    "**/*.{feature,features}"
+  ],
+  "integrationFolder": "cypress/tests"
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="56.7110" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-02-06T09:54:38" tests="0" file="cypress/tests/integration/login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login and upload file in the Employer Portal" timestamp="2021-02-06T09:54:38" tests="1" time="56.7110" failures="0">
+    <testcase name="Login and upload file in the Employer Portal Scenario Outline name: Upload file and delete file from Grid (example #1)" time="56.7110" classname="Scenario Outline name: Upload file and delete file from Grid (example #1)">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -22,5 +22,15 @@ chai.use(chaiSubset);
 import postgreSQL from 'cypress-postgresql';
 postgreSQL.loadDBCommands();
 
+Cypress.Server.defaults({
+    delay: 500,
+    // force404: false,
+    // enable:false,
+    ignore: (xhr) => {
+      // handle custom logic for whitelisting
+      return true;
+    }
+  })
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

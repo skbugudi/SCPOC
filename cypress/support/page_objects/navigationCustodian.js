@@ -9,9 +9,9 @@ export class NavigationCustodian{
     cy.get("form").submit();
     }
 
-    uploadContributions(filepath){
-    cy.contains("Upload a new file").click({ force: true });
-    cy.get("#schedule_upload_file").attachFile(filepath);
+    uploadContributions(file){
+    cy.contains('a','Upload a new file').click({ force: true });
+    cy.get("#schedule_upload_file").attachFile(file);
     cy.get("#paycycle-next-button").click();
     }
 }
