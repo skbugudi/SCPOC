@@ -1,7 +1,8 @@
 FROM cypress/browsers:node12.18.3-chrome87-ff82
-RUN mkdir /app
-WORKDIR /app
-COPY . /app
+RUN mkdir /SCPOC
+WORKDIR /SCPOC
+COPY . /SCPOC
+RUN cd /SCPOC
 
 RUN npm install
 # RUN cypress install
@@ -15,7 +16,7 @@ RUN sed -i 's/https:\/\/api.cypress.io/http:\/\/192.168.1.11:1234/g' /root/.cach
 RUN $(npm bin)/cypress verify
 
 
-RUN ["npm", "run", "cy:chrome"]
+CMD ["npm", "run", "cy:chrome"]
 
-CMD ["echo","Shanth from docker"]
+
 
