@@ -3,11 +3,11 @@
   "ignoreTestFiles": "**/examples/*",
   "viewportHieght": 1080,
   "viewportWidth": 1920,
-  "chromeWebSecurity": false,
   "defaultCommandTimeout": 60000,
   "video": true,
   "screenshotOnRunFailure": true,
   "trashAssetsBeforeRuns": true,
+  "chromeWebSecurity": false,
   "retries": {
     "runMode": 0,
     "openMode": 0
@@ -21,7 +21,7 @@
   "db": {
     "user": "empis_sys",
     "password": "sys",
-    "host": "postgres-portals.prtlshared2.dev.ic1.sc.local",
+    "host": "postgres-portals.prtlshared.dev.ic2.sc.local",
     "database": "sctest",
     "port": 27500
   },

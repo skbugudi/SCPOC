@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-02-16T11:37:43" tests="0" file="cypress/tests/integration/login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login and upload file in the Employer Portal" timestamp="2021-02-16T11:37:43" tests="1" time="0.0000" failures="2">
+    <testcase name="Login and upload file in the Employer Portal Scenario Outline name: Upload file and delete file from Grid (example #1)" time="0.0000" classname="Scenario Outline name: Upload file and delete file from Grid (example #1)">
+      <failure message="Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands." type="CypressError"><![CDATA[CypressError: Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+    at timedOutWaitingForPageLoad (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:158128:13)
+    at https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:158393:14
+    at tryCatcher (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:10765:23)
+    at https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5887:41
+    at tryCatcher (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:10765:23)
+    at Promise._settlePromiseFromHandler (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8700:31)
+    at Promise._settlePromise (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8757:18)
+    at Promise._settlePromise0 (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8802:10)
+    at Promise._settlePromises (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:8878:18)
+    at _drainQueueStep (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5472:12)
+    at _drainQueue (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5465:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5481:5)
+    at Async.drainQueues (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:5351:14)
+From Your Spec Code:
+    at NavigationCustodian.uploadContributions (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:143:10)
+    at Context.eval (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:250:38)
+    at Context.resolveAndRunStepDefinition (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:13838:9)
+    at Context.eval (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:13179:35)
+From Your Spec Code:
+    at NavigationCustodian.uploadContributions (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:143:10)
+    at Context.eval (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:250:38)
+    at Context.resolveAndRunStepDefinition (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:13838:9)
+    at Context.eval (https://portal-prtlshared.devint.superchoice.com.au/__cypress/tests?p=cypress/tests/integration/login.feature:13179:35)]]></failure>
+    </testcase>
+    <testcase name="Login and upload file in the Employer Portal &quot;after all&quot; hook for &quot;Scenario Outline name: Upload file and delete file from Grid (example #1)&quot;" time="0.0000" classname="&quot;after all&quot; hook for &quot;Scenario Outline name: Upload file and delete file from Grid (example #1)&quot;">
+      <failure message="Cypress command timeout of `60000ms` exceeded.
+
+Because this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login and upload file in th...`" type="CypressError"><![CDATA[CypressError: Cypress command timeout of `60000ms` exceeded.
+
+Because this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login and upload file in th...`
+    at cypressErr (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:174135:18)
+    at Object.errByPath (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:174186:10)
+    at https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:175780:29]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

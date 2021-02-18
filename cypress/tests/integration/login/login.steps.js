@@ -7,6 +7,7 @@ import { util } from '../../../support/Utilities/generalUtilities';
 
 Given('I am in login page and login with {string} and {string} and {string} to the application',(custodian,username,password)=>{
     // cy.openHomePage(custodian,username,password);
+    // cy.postgreSQL(util.deleteScript()).then((resp)=>{ console.log(resp)});
     cy.apiLogin(custodian,username,password);
     // cy.openHomePage("mcsone","MCSONEUserOne","&qsltd");
 });

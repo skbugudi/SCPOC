@@ -15,11 +15,11 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
-
+// module.exports = (on, config) => {
+//   // `on` is used to hook into various events Cypress emits
+//   // `config` is the resolved Cypress config
+// }
+const cucumber = require('cypress-cucumber-preprocessor').default
 const postgreSQL = require('cypress-postgresql');
 const pg = require('pg');
 const dbConfig = require('../../cypress.json');
@@ -28,10 +28,8 @@ module.exports = (on, config) => {
   const pool = new pg.Pool(dbConfig.db);
   tasks = postgreSQL.loadDBPlugin( pool );
   on('task', tasks);
+
+  on('file:preprocessor', cucumber());
+
 }
 
-const cucumber = require('cypress-cucumber-preprocessor').default
- 
-module.exports = (on, config) => {
-  on('file:preprocessor', cucumber())
-}

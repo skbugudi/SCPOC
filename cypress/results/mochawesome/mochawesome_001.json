@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-02-06T09:54:38.031Z",
-    "end": "2021-02-06T09:55:34.837Z",
-    "duration": 56806,
+    "start": "2021-02-16T12:45:32.045Z",
+    "end": "2021-02-16T12:45:56.626Z",
+    "duration": 24581,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2b8e7803-7e03-4d91-8128-15d936d8d0a4",
+      "uuid": "902ed515-0f87-4ce9-870c-33e7a9894915",
       "title": "",
       "fullFile": "cypress/tests/integration/login.feature",
       "file": "cypress/tests/integration/login.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "52b14b89-46f1-474d-b05a-aadaf7e8d364",
+          "uuid": "bed51d7c-080a-4aa4-a6f8-167799b761da",
           "title": "Login and upload file in the Employer Portal",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Scenario Outline name: Upload file and delete file from Grid (example #1)",
               "fullTitle": "Login and upload file in the Employer Portal Scenario Outline name: Upload file and delete file from Grid (example #1)",
               "timedOut": null,
-              "duration": 56711,
+              "duration": 24552,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "e0b6d7b3-1481-41e7-9930-c9c684c76308",
-              "parentUUID": "52b14b89-46f1-474d-b05a-aadaf7e8d364",
+              "uuid": "6e0d3c1a-28a3-4a73-a928-39e3d0756494",
+              "parentUUID": "bed51d7c-080a-4aa4-a6f8-167799b761da",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e0b6d7b3-1481-41e7-9930-c9c684c76308"
+            "6e0d3c1a-28a3-4a73-a928-39e3d0756494"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 56711,
+          "duration": 24552,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

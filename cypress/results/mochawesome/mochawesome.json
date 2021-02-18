@@ -2,23 +2,23 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-02-06T09:20:58.804Z",
-    "end": "2021-02-06T09:22:03.984Z",
-    "duration": 65180,
+    "failures": 1,
+    "start": "2021-02-16T11:37:43.872Z",
+    "end": "2021-02-16T11:39:54.174Z",
+    "duration": 130302,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
+    "other": 1,
+    "hasOther": true,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
     {
-      "uuid": "3ef23da8-f1de-4e3f-8f4a-ad8ddf00e61b",
+      "uuid": "35a921eb-3390-45c3-b320-5c375c2d256f",
       "title": "",
       "fullFile": "cypress/tests/integration/login.feature",
       "file": "cypress/tests/integration/login.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7530cf16-9072-4c79-8295-ec499d555538",
+          "uuid": "3db649d9-b5b3-40f2-81d8-e466c009312f",
           "title": "Login and upload file in the Employer Portal",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "Scenario Outline name: Upload file and delete file from Grid (example #1)",
               "fullTitle": "Login and upload file in the Employer Portal Scenario Outline name: Upload file and delete file from Grid (example #1)",
               "timedOut": null,
-              "duration": 65144,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 60854,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "a6fb99d0-91a6-4f09-9f3c-e0952bb51261",
-              "parentUUID": "7530cf16-9072-4c79-8295-ec499d555538",
+              "err": {
+                "message": "CypressError: Cypress command timeout of `60000ms` exceeded.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login and upload file in th...`",
+                "estack": "CypressError: Cypress command timeout of `60000ms` exceeded.\n\nBecause this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login and upload file in th...`\n    at cypressErr (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:174135:18)\n    at Object.errByPath (https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:174186:10)\n    at https://portal-prtlshared.devint.superchoice.com.au/__cypress/runner/cypress_runner.js:175780:29",
+                "diff": null
+              },
+              "uuid": "1695654e-9841-4511-a5c8-e1f824fb68b3",
+              "parentUUID": "3db649d9-b5b3-40f2-81d8-e466c009312f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "a6fb99d0-91a6-4f09-9f3c-e0952bb51261"
+          "passes": [],
+          "failures": [
+            "1695654e-9841-4511-a5c8-e1f824fb68b3"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 65144,
+          "duration": 60854,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
