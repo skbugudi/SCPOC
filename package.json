@@ -42,7 +42,8 @@
     "cy:run2": "npx cypress run --headless --record --key xxx --parallel --ci-build-id ${env.BRANCH_NAME}-${env.BUILD_ID}",
     "cy:run_p": "npm run cy:run2 & npm run cy:run2",
     "cy:run_b": "ID=$(date \"+%Y-%m-%d_%H-%M-%S\") npm run cy:run_p",
-    "cy:chrome": "cypress run --browser chrome --group CHROME --headed --record --key xxx --ci-build-id $(date \"+%Y-%m-%d_%H-%M-%S\")"
+    "cy:chrome": "cypress run --browser chrome --group CHROME --headed --record --key xxx --ci-build-id $(date \"+%Y-%m-%d_%H-%M-%S\")",
+    "cy:edge": "cypress run --browser edge --group EDGE --headed --record --key xxx --ci-build-id $(date \"+%Y-%m-%d_%H-%M-%S\")"
   },
   "author": "Shanth Kumar",
   "license": "ISC"
